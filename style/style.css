@@ -353,6 +353,37 @@ button {
   width: 600px;
 }
 
+.resorts {
+  padding: 150px 0;
+}
+.resorts__content {
+  margin: 50px 0 0 0;
+}
+.resorts__img {
+  position: relative;
+  margin-left: 100px;
+  max-width: 400px;
+  max-height: 600px;
+  transition: 0.5s;
+  background: url("../img/cult.jpg") no-repeat center/cover;
+}
+.resorts__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.resorts__img:hover {
+  transform: scale(1.1);
+  box-shadow: -39px 28px 30px rgba(121, 112, 54, 0.5);
+}
+.resorts__title {
+  width: 400px;
+}
+.resorts__desc {
+  margin-bottom: 27px;
+  width: 600px;
+}
+
 .carousel {
   padding-bottom: 50px;
 }
@@ -677,6 +708,11 @@ button {
   margin: 0 0 1em 0;
   text-align: center;
 }
+.popup__subtitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: left;
+}
 .popup__label {
   font-weight: 400;
   font-size: 17px;
@@ -733,7 +769,7 @@ button {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
