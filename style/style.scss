@@ -169,9 +169,8 @@ button {
 
   &__input {
     display: none;
-
     &:checked + .header__slider {
-      background: #b66109;
+      background: #eb7800;
     }
 
     &:checked + .header__slider:before {
@@ -186,7 +185,8 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background: #b66109;
+    background: #eb7800;
+    box-shadow: 0 0 30px 6px #eb7800;
     border-radius: 34px;
     transition: 0.4s;
 
@@ -224,8 +224,8 @@ button {
     transition: 0.3s;
 
     &:hover {
-      color: #FFC178;
-      border-bottom: solid 1px #FFC178;
+      color: #eb7800;
+      border-bottom: solid 1px #eb7800;
     }
   }
 
@@ -244,11 +244,11 @@ button {
     flex-direction: column;
     left: 57px;
     top: 235px;
-    transition: .3s;
 
     & .fa-brands {
-      color: var(--orange);
+      color: #FFFFFF;
       margin: 25px;
+      transition: .3s;
 
       &:hover {
         transform: scale(1.2);
@@ -275,11 +275,12 @@ button {
     margin-left: 80px;
     position: relative;
     font-weight: 700;
-    color: var(--black);
     font-size: 16px;
     line-height: 25px;
     letter-spacing: 6px;
     text-transform: uppercase;
+    color: #FFFFFF;
+
 
     &:before {
       content: "";
@@ -288,7 +289,7 @@ button {
       bottom: 12px;
       width: 52px;
       height: 2px;
-      background: var(--black);
+      background: #ffffff;
     }
   }
 
@@ -299,7 +300,9 @@ button {
     line-height: 100px;
     letter-spacing: 5px;
     text-transform: capitalize;
-    color: #ffffff;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: conic-gradient(#ff6600 27%, #ff6262, #ff4700, #ff0000);
 
     &_bold {
       font-weight: 700;
@@ -307,30 +310,37 @@ button {
   }
 
   &__btn {
+    position: absolute;
+    bottom: 130px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: #000000;
+    color: #ffffff;
     text-align: center;
-    margin-left: 200px;
     width: 150px;
     height: 50px;
-    background: rgba(235, 120, 0, 0.40);
+    background: #eb7800;
     border-radius: 8px;
     transition: 0.3s;
 
     &:hover {
-      color: #000000;
-      background: rgba(235, 120, 0, 0.7);
+      transform: scale(1.1);
+      box-shadow: 0 0 30px 6px #ff4e00;
+      background: #ff4e00;
+    }
+    &:checked {
+      transform: scale(0.9);
     }
   }
 }
 
 .rest {
   position: relative;
-  padding-bottom: 50px;
 
   &__img {
     position: relative;
@@ -350,7 +360,7 @@ button {
 
   &__img:hover {
     transform: scale(1.1);
-    box-shadow: -39px 28px 30px rgb(121 112 54 / 50%);
+    box-shadow: -39px 28px 30px rgba(235, 120, 0, 0.49);
   }
 
   &__img_link:before {
@@ -392,20 +402,19 @@ button {
 }
 .resorts {
 
-  padding: 150px 0;
+  padding: 150px 0 100px;
 
-  &__content{
-    margin: 50px 0 0 0;
+  &__content {
+    margin: -15px 0 0 0;
   }
-  &__img{
+  &__img {
     position: relative;
     margin-left: 100px;
     max-width: 400px;
     max-height: 600px;
     transition: 0.5s;
-    background: url("../img/cult.jpg") no-repeat center/cover;
 
-    & img{
+    & img {
       object-fit: cover;
       width: 100%;
       height: 100%;
@@ -497,10 +506,10 @@ button {
 }
 
 .culture {
-  padding: 150px 0;
+  padding-top: 150px;
 
   &__content {
-    margin: 88px 0 0 0;
+    margin: 50px 0 0 0;
   }
 
   &__img {
@@ -532,7 +541,7 @@ button {
 }
 .food {
 
-  padding: 150px 0;
+  padding: 100px 0;
 
   &__img {
     position: relative;
@@ -540,8 +549,6 @@ button {
     max-height: 600px;
     margin-right: 100px;
     transition: 0.5s;
-    background: url("../img/food2.jpg") no-repeat center/cover;
-
     & img {
       object-fit: cover;
       width: 100%;
@@ -599,12 +606,14 @@ button {
     color: #000000;
     width: 200px;
     height: 60px;
-    background: #FFA343;
+    background: #eb7800;
     border-radius: 8px;
     transition: 0.3s;
 
     &:hover {
-      background: rgb(245, 127, 10);
+      background: #eb7800;
+      transform: scale(1.1);
+      box-shadow: 0 0 30px 6px #eb7800;
     }
 
   }
@@ -639,22 +648,22 @@ button {
     height: 50px;
     border: none;
     font-size: 18px;
-    border-bottom: 1px solid #FFA343;
+    border-bottom: 1px solid #eb7800;
     color: var(--light);
     padding: 20px;
     outline: none;
     background: none;
+
   }
 
   &__btn {
     width: 50px;
     height: 50px;
-    background: #FFA343;
+    background: #eb7800;
     border-radius: 8px 8px 0 0;
     transition: 0.3s;
-
     &:hover {
-      background: rgb(245, 127, 10);
+      box-shadow: 0 0 30px 6px #eb7800;
     }
   }
 
@@ -795,6 +804,7 @@ button {
 
     &:hover {
       color: #FFA343;
+      transform: scale(1.1);
     }
   }
 
@@ -818,9 +828,14 @@ button {
   &__input {
     padding: 0 20px;
     margin: 11px 0;
-    border: 1px solid #FFA343;
+    border: 1px solid #eb7800;
     border-radius: 5px;
     font-size: 17px;
+    transition: .2s;
+    &:hover {
+      box-shadow: 0 0 30px 6px #eb7800;
+      transform: scale(1.05);
+    }
 
     &::placeholder {
       color: rgb(7, 7, 7);
@@ -845,10 +860,10 @@ button {
     border-radius: 5px;
     transition: 0.3s;
     margin-top: 20px;
-    background: #FFA343;
+    background: #eb7800;
 
     &:hover {
-      background: #f17a11;
+      box-shadow: 0 0 30px 6px #eb7800;
     }
   }
 
