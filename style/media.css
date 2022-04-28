@@ -230,6 +230,7 @@
         width: 100%;
         margin: 50px 0 0 0;
     }
+
     .resorts__img {
         margin-left: auto;
         top: -50px;
@@ -242,6 +243,7 @@
         max-width: 400px;
         width: 100%;
     }
+
     .section__subtitle {
         letter-spacing: 2px;
         margin-left: 65px;
@@ -320,6 +322,7 @@
         width: 100%;
         max-height: 500px;
     }
+
     .food__img {
         margin-right: auto;
         max-width: 350px;
@@ -329,6 +332,7 @@
     .food__content {
         margin: 0 0 0 0;
     }
+
     .form {
         height: 70px;
     }
@@ -415,16 +419,20 @@
     .hero {
         padding: 180px 0 0 200px;
     }
+
     .rest__content {
         margin: 90px 0 0 0;
     }
+
     .culture__content {
         margin: -50px 0 0 0;
     }
+
     .food__img {
         max-width: 350px;
         max-height: 500px;
     }
+
     .food__content {
         margin: 50px 0 0 0;
     }
@@ -509,21 +517,27 @@
         font-size: 14px;
         line-height: 20px;
     }
+
     .rest__img {
         margin-right: 20px;
     }
+
     .resorts__img {
         margin-left: 20px;
     }
+
     .resorts__content {
         margin: -50px 0 0 0;
     }
+
     .culture__img {
         margin-left: 20px;
     }
+
     .food__img {
         margin-right: 20px;
     }
+
     .form__title {
         font-size: 18px;
         line-height: 21px;
@@ -635,6 +649,7 @@
         width: 100%;
         height: 480px;
     }
+
     .resorts__img {
         max-width: 330px;
         width: 100%;
@@ -709,16 +724,19 @@
         line-height: 20px;
         width: auto;
     }
+
     .culture__img {
         max-width: 330px;
         width: 100%;
         height: 480px;
     }
+
     .food__img {
         max-width: 330px;
         width: 100%;
         height: 480px;
     }
+
     .popup__content {
         flex-direction: column;
     }
@@ -882,6 +900,7 @@
     .hero__icons {
         left: 2px;
     }
+
     .hero__title {
         background-image: conic-gradient(#ff4400, #ffffff, #ff2e00, #ffffff);
     }
@@ -894,9 +913,11 @@
     .rest__img {
         max-width: 300px;
     }
+
     .resorts__img {
         max-width: 300px;
     }
+
     .carousel-item img {
         max-height: 422px;
     }
@@ -904,6 +925,7 @@
     .culture__img {
         max-width: 300px;
     }
+
     .food__img {
         max-width: 300px;
     }
@@ -960,6 +982,7 @@
     .resorts .container {
         flex-direction: column-reverse;
     }
+
     .resorts__content {
         text-align: center;
         max-width: 350px;
@@ -971,6 +994,7 @@
         margin: 0 auto -20px;
         height: 480px;
     }
+
     .section__subtitle {
         margin-left: 0;
     }
@@ -1001,9 +1025,11 @@
         margin: 60px auto 0;
         max-width: 390px;
     }
+
     .food {
         padding: 50px 0 100px;
     }
+
     .food .container {
         flex-direction: column;
     }
@@ -1051,6 +1077,7 @@
         max-width: 550px;
         padding: 0 10px;
     }
+
     .carousel-item img {
         max-height: 350px;
     }
@@ -1073,6 +1100,7 @@
         line-height: 25px;
         text-align: center;
     }
+
     .hero__btn {
         margin-left: 55px;
     }
@@ -1206,6 +1234,14 @@
 
     .rest__img_link:before {
         font-size: 100px;
+    }
+
+    .rest__info h3 {
+        font-size: 14px;
+    }
+
+    .rest__info p {
+        font-size: 12px;
     }
 
     .rest__content {
@@ -1400,6 +1436,7 @@
     .container {
         max-width: 390px;
     }
+
     .carousel-item img {
         max-height: 247px;
     }
@@ -1410,12 +1447,18 @@
     .container {
         max-width: 380px;
     }
+    .carousel-item img {
+        max-height: 240px;
+    }
 
 }
 
 @media (max-width: 390px) {
     .container {
         max-width: 375px;
+    }
+    .carousel-item img {
+        max-height: 235px;
     }
 
 }
@@ -1424,7 +1467,9 @@
     .container {
         max-width: 370px;
     }
-
+    .carousel-item img {
+        max-height: 230px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -1451,10 +1496,12 @@
     .carousel-item img {
         max-height: 220px;
     }
+
     .culture__img {
         max-width: 280px;
         max-height: 390px;
     }
+
     .food__img {
         max-width: 280px;
         max-height: 390px;
@@ -1483,6 +1530,7 @@
         font-size: 27px;
         text-align: center;
     }
+
     .carousel-item img {
         max-height: 214px;
     }
@@ -1526,6 +1574,7 @@
     .container {
         max-width: 310px;
     }
+
     .carousel-item img {
         max-height: 197px;
     }
